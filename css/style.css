@@ -42,15 +42,36 @@ p {
   min-height: 1px;
   margin: 0 2% 20px;
 }
-@media (min-width: 320) {
+@media (min-width: 320px) {
   .container {
     width: 312px;
   }
+  header .logo {
+    text-align: center;
+  }
+  header .account {
+    text-align: center;
+  }
+    header .account ul {
+      float: none;
+    }
 }
 @media (min-width: 768px) {
   .container {
     width: 750px;
   }
+  .one-half {
+    width: 46%;
+  }
+  header .logo {
+    text-align: left;
+  }
+  header .account {
+    text-align: left;
+  }
+    header .account ul {
+      float: right;
+    }
 }
 @media (min-width: 992px) {
   .container {
@@ -126,6 +147,7 @@ header .hero {
  header .hero img {
    display: block;
    margin:3em auto 0;
+   max-width: 100%;
  }
 
  /* BUTTONS */
