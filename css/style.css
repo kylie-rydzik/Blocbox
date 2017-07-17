@@ -52,7 +52,7 @@ p {
   header .account {
     text-align: center;
   }
-    header .account ul {
+  header .account ul {
       float: none;
     }
 }
@@ -69,8 +69,13 @@ p {
   header .account {
     text-align: left;
   }
-    header .account ul {
+  header .account ul {
       float: right;
+    }
+.heading {
+      margin: 0 auto;
+      position: relative;
+      width: 550px;
     }
 }
 @media (min-width: 992px) {
