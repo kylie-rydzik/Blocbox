@@ -251,12 +251,12 @@ header .hero {
   font-weight: 100;
   color: #888;
   font-size: 20px;
-  vertical-align: middle;
 }
 .box ul li {
   font-size: 18px;
   margin-bottom: 20px;
   font-weight: 100;
+  vertical-align: middle;
 }
 span.bold {
   font-weight: bold;
@@ -273,20 +273,23 @@ span.bold {
   line-height: 15px;
   font-style: italic;
 }
-@media (min-width: 230px) and (max-width: 991px) {
+@media (min-width: 320px) and (max-width: 991px) {
    .box {
      margin: 1em -1em;
      position: relative;
      width: 300px;
+     min-height: 320px;
    }
    .box.middle {
-     min-height: 439px;
+     min-height: 320px;
      margin-top: 25px;
    }
    .box.middle h3 {
      background: #3498db;
      color: #fff;
-     padding: 30px 0;
+   }
+   .box h4 {
+     margin: -30px 0px;
    }
 }
 @media (min-width: 768px) {
