@@ -72,12 +72,7 @@ p {
   header .account ul {
       float: right;
     }
-.heading {
-      margin: 0 auto;
-      position: relative;
-      width: 550px;
-    }
-}
+  }
 @media (min-width: 992px) {
   .container {
     width: 970px;
@@ -190,6 +185,13 @@ header .hero {
  .benefits h2 {
    color: #3498db;
  }
+ @media (min-width: 768px) and (max-width: 991px) {
+   .benefits p {
+     margin: 1em auto;
+     position: relative;
+     width: 550px;
+   }
+ }
 
 /* PRICING */
 .pricing {
@@ -271,6 +273,27 @@ span.bold {
   line-height: 15px;
   font-style: italic;
 }
+@media (min-width: 230px) and (max-width: 991px) {
+   .box {
+     margin: 1em -1em;
+     position: relative;
+     width: 300px;
+   }
+   .box.middle {
+     min-height: 439px;
+     margin-top: 25px;
+   }
+   .box.middle h3 {
+     background: #3498db;
+     color: #fff;
+     padding: 30px 0;
+   }
+}
+@media (min-width: 768px) {
+  .box {
+    margin: 1em auto;
+  }
+}
 
 /* TESTIMONIALS */
 .testimonials {
@@ -324,6 +347,22 @@ span.bold {
 .stagger {
   padding-top: 20px;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  .testimonials blockquote {
+    margin: 2em auto 0;
+    position: relative;
+    width: 400px;
+  }
+  .testimonials img {
+    float: none;
+    position: relative;
+    right: 250px;
+  }
+  .testimonials p.name {
+    position: relative;
+    right: -230px;
+  }
+}
 
 /* CALL TO ACTION */
 .call-to-action {
@@ -335,6 +374,13 @@ span.bold {
 }
 .call-to-action p {
   margin-bottom: 50px;
+}
+@media (min-width: 768px) {
+ .tablet {
+        margin: 0 auto;
+        position: relative;
+        width: 550px;
+ }
 }
 
 /* FOOTER */
@@ -375,14 +421,28 @@ footer .logo {
     background-image: linear-gradient(to left, #3498DB 0%, #3498DB 33.33337%, #34495E 33.33337%, #34495E 100%);
     height: 100px;
   }
-  footer p, footer nav ul {
+  footer p {
     padding: 2em 0;
     text-align: left;
+  }
+  footer nav ul {
+    padding: 2em 0;
+    text-align: center;
   }
   footer .right-footer-block {
     background-color: #3498db;
   }
   footer .logo {
     padding: 2em 0 2em 1.5em;
+  }
+}
+@media (max-width: 991px) {
+  footer {
+    background-color: #34495e;
+    background-image: none;
+    height: 170px;
+  }
+  footer .logo {
+    padding: 0;
   }
 }
