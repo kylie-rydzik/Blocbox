@@ -448,6 +448,9 @@ footer .logo {
   footer .logo {
     padding: 0;
   }
+  footer nav ul {
+    padding: 0;
+  }
 }
 
 /* DASHBOARD */
@@ -485,6 +488,7 @@ footer .logo {
   padding: 0;
 }
 .left-nav .items ul li {
+  padding: 0 10px;
   list-style-type: none;
   margin-bottom: 15px;
 }
@@ -497,6 +501,10 @@ footer .logo {
   width: 16px;
   text-align: center;
   margin-right: 8px;
+}
+.left-nav ul li.active {
+  padding: 5px 10px;
+  background: #34495e;
 }
 
 /* LEFT NAVBAR SETTINGS */
