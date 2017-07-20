@@ -590,10 +590,13 @@ footer .logo {
 .left-nav .settings a {
   color: #fff;
   text-decoration: none;
+  position: relative;
+  top: -5px;
+  right: 10px;
   text-align: right;
   float: right;
-  margin-right: 10px;
-  margin-top: 8px;
+/*  margin-right: 10px;
+  margin-top: 8px; */
 }
 
 /* CONTENT */

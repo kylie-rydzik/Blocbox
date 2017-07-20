@@ -58,3 +58,43 @@
   font-family: "Lato", Helvetica, Arial, sans-serif;
   font-weight: 100;
 }
+
+/* SETTINGS MENU*/
+.settings-menu .dropit-submenu {
+    position: absolute;
+    top: -205px;
+    right: 0;/* dropdown left or right */
+    z-index: 1000;
+    display: none;
+    width: 140px;
+    list-style: none;
+	  padding: 15px 20px;
+	  margin: 60px -1px 0;
+}
+.settings-menu .dropit-open .dropit-submenu::after {
+  content: " ";
+  position: absolute;
+  border-style: solid;
+  border-width: 8px 8px 0 8px;
+  border-color: #fff transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  top: 100%;
+  right: 10px;
+}
+.settings-menu .dropit-open .dropit-submenu li {
+  display: block;
+  margin-top: 5px;
+}
+.settings-menu .dropit-open .dropit-submenu li a {
+  color: #34495e;
+  text-decoration: none;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  text-align: left;
+  float: left;
+  line-height: 2em;
+  position: relative;
+  right: 0px;
+}
